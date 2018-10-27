@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Bree+Serif|Merriweather" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Movember Mustache Product</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<script src="main.js"></script>
+</head>
+
+<body>
+
+	<header id="header">
+
+		<nav id="nav-bar" role="navigation">
+			<ul>
+
+				<li class="company-icon">
+					<a href="#">
+						<img id="header-img" src="mustachelogotransp.PNG" alt="company-icon">
+					</a>
+				</li>
+
+				<li class="nav-link">
+					<a href="#home">Home</a>
+				</li>
+				<li class="nav-link">
+					<a href="#options">Options</a>
+				</li>
+				<li class="nav-link">
+					<a href="#video">Video</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<main>
+
+		<section class="home" id="home">
+			<!-- <div id="bg"></div> -->
+
+			<div class="container">
+				<div class="mustachelogo">
+					<img id="mustacheheader" src="mustachelarge2.png" alt="company-icon">
+				</div>
+				<form id="home-form">
+
+					<!-- <label for="email" id="email-label">Email:</label> -->
+					<input type="email" class="home-input" id="email" name="email" placeholder="Enter your email" required>
+
+					<input type="submit" class="home-input" id="submit" value="Tell me Mo'">
+
+				</form>
+			</div>
+		</section>
+		<section class="options" id="options">
+			<form>
+				<h1 id="option-header">Options</h1>
+				<div class="section-container row">
+					<input type="radio" class="radio-option" name="optionpacks" id="singlepack" value="singlepack" required>
+					<label for="singlepack" class="optionitem">
+
+						<div class="mustachecontainer">
+							<div class="container2">
+								<div class="mustachexsmall"></div>
+							</div>
+						</div>
+						<h3>Single Pack</h3>
+						<h3>€ 15</h3>
+					</label>
+					<input type="radio" class="radio-option" name="optionpacks" id="doublepack" value="doublepack">
+					<label for="doublepack" class="optionitem">
+
+						<div class="mustachecontainer">
+							<div class="container3">
+								<div class="mustachexsmall"></div>
+							</div>
+							<div class="container2">
+								<div class="mustachexsmall"></div>
+							</div>
+						</div>
+						<h3>Double Pack</h3>
+						<h3>€ 25</h3>
+					</label>
+					<input type="radio" class="radio-option" name="optionpacks" id="familypack" value="familypack">
+					<label for="familypack" class="optionitem">
+
+						<div class="mustachecontainer">
+							<img id="option-img1" src="mustachelogotransp.PNG" alt="company-icon">
+							<img id="option-img2" src="mustachelogotransp.PNG" alt="company-icon">
+							<img id="option-img3" src="mustachelogotransp.PNG" alt="company-icon">
+						</div>
+						<h3>Family Pack</h3>
+						<h3>€ 30</h3>
+					</label>
+
+				</div>
+				<input type="submit" id="submit-option" value="Donate">
+			</form>
+		</section>
+		<section class="video" id="video">
+			<div class="iframe-container">
+				<iframe src="https://www.youtube.com/embed/4AhS_-0J7HI?loop=1&modestbranding=1&rel=0&iv_load_policy=3&theme=light&color=white"
+				 width="560" height="315" frameborder="0"></iframe>
+			</div>
+			<div class="footer">
+				<p>Coded by Jelte Homminga as part of the Free Code Camp Web Development Curriculum projects</p>
+			</div>
+		</section>
+
+
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

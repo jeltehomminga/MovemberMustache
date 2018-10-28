@@ -335,7 +335,7 @@ input:checked+.optionitem {
 	}
 
 	nav,
-	footer {
+	.footer {
 		font-size: 1.5em;
 	}
 

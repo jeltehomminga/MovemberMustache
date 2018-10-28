@@ -21,6 +21,8 @@ nav {
 	border: 5px ridge;
 	border-color: rgb(245, 245, 245);
 	box-shadow: 5px 10px 20px 3px #888888;
+	position: fixed;
+	width: 100%;
 }
 
 ul {
@@ -40,16 +42,15 @@ form {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 4%;
 	margin-bottom: 0px;
-	padding: 3%;
+
 	font-family: 'Merriweather', serif;
 	font-size: 1.5em;
 }
 
-.home-form input {
-	height: 30px;
-	margin: 1%;
+.home-input {
+	height: 35px;
+	margin: 2%;
 	width: 50%;
 	text-align: center;
 	font-size: 1em;
@@ -65,6 +66,7 @@ form {
 	width: 100%;
 	height: auto;
 	opacity: 0.95;
+	margin-bottom: 3%;
 }
 
 #option-img1 {
@@ -96,7 +98,7 @@ form {
 	margin-left: 2%;
 }
 
-.nav-link {
+.nav-li {
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -114,17 +116,15 @@ form {
 .options {
 	background-color: rgb(14, 110, 124);
 	font-size: 180%;
-	padding-top: 40px;
-	padding-bottom: 100px;
+	padding-top: 20px;
 	text-align: center;
 	height: auto;
 }
 
 .section-container {
-	margin: 50px;
+	margin: 0 50px 50px 50px;
 	width: 80%;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 
@@ -135,10 +135,11 @@ form {
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
+	align-self: center;
 	justify-content: flex-end;
 	border: solid rgba(245, 245, 245, 0.95);
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 5px;
 	margin: 2%;
 	border-radius: 2%;
 	background-color: rgb(245, 245, 245);
@@ -162,7 +163,7 @@ form {
 	background-size: 100%;
 	min-width: 327px;
 	background-repeat: no-repeat;
-	padding: 10% 0 16% 0;
+	padding: 10% 0 20% 0;
 
 }
 
@@ -256,7 +257,6 @@ form {
 .iframe-container iframe {
 	position: absolute;
 	margin: 5%;
-
 	top: 0;
 	left: 0;
 	width: 90%;
@@ -268,15 +268,16 @@ form {
 .video {
 	background: linear-gradient(rgb(14, 110, 124), #888888);
 	/* #888888; */
-	padding-bottom: 150px;
+	padding-bottom: 50px;
 }
 
 
 .radio-option {
+
 	/* HIDE RADIO */
-	/* visibility: hidden; */
+	visibility: hidden;
 	/* Makes input not-clickable */
-	/* position: absolute; */
+	position: absolute;
 	/* Remove input from document flow */
 }
 
@@ -287,9 +288,24 @@ form {
 }
 
 .optionitem:hover {
-	background-color: rgba(178, 229, 203, 0.4);
-	border: solid rgba(63, 191, 127, 0.1);
+	border: solid rgba(5, 38, 43, 0.8);
 	border-radius: 5px;
+}
+
+.footer {
+	width: 80%;
+	text-align: center;
+	font-size: 2em;
+	margin: auto;
+	margin-top: 80px;
+}
+
+#submit-option {
+	width: 10%;
+	min-width: 250px;
+	height: 50px;
+	font-size: 0.8em;
+	border: ridge;
 }
 
 input~label:active {
@@ -298,8 +314,37 @@ input~label:active {
 
 input:checked+.optionitem {
 	/* (RADIO CHECKED) IMAGE STYLES */
-	padding: 2px;
-	border: 2px solid rgba(63, 191, 127);
+	margin: 3%;
+	padding: 40px 1% 10px 1%;
+	border: 2px solid black;
 	border-radius: 5px;
-	background-color: rgba(178, 229, 203, 0.4);
+	background-color: white;
+	box-shadow: #888888 10px 10px 15px 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.home {
+		padding-bottom: 11%;
+	}
+
+	.home-input {
+		height: 25px;
+		font-size: 0.7em;
+	}
+
+	nav,
+	footer {
+		font-size: 1.5em;
+	}
+
+	#submit-option {
+		font-size: 0.6em;
+	}
+
+	.options {
+		font-size: 140%;
+	}
+
 }

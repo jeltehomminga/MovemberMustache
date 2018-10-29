@@ -23,6 +23,7 @@ nav {
 	box-shadow: 5px 10px 20px 3px #888888;
 	position: fixed;
 	width: 100%;
+	z-index: 3;
 }
 
 ul {
